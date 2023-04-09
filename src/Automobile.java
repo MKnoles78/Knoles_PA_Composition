@@ -66,9 +66,35 @@ public ArrayList<Tire> getTires() {
 public void addTire(Tire val){
     Tires.add(val);
 }
-
-public addTire(String manufacturer, String size, int max, int min, String type) {
+//Add a tire by creating one based on parameters
+public void addTire(String manufacturer, String size, int max, int min, String type) {
     Tires.add(new Tire(manufacturer, size, max, min, type));
+}
+
+private String formatEngine() {
+    return String.format("%s%d%n%s%s%n%s%s", 
+    EngineInfo.getCylinders(),
+    EngineInfo.getGasType(),
+    EngineInfo.isFuelInjected());
+}
+
+public String getInfo() {
+    String rval;
+    System.out.println("Automobile 1");
+    rval = String.format("%s%s%n%s%s%n%s%s%n%s%s%n",
+    "Make: ", Make,
+    "Model: ", Model,
+    "Color: ", Color,
+    "Body Style: ", BodyStyle,
+    formatEngine());
+
+    rval += "\nTire: \n";
+    for (Tire tire : Tires) {
+        rval += tire;
+        rval += "\n";
+    }
+
+    return rval;
 }
 
 }
