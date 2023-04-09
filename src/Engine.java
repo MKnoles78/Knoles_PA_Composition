@@ -4,5 +4,7 @@
  * Assignment CIS319 Performance Assessment = Composition
  */
 public class Engine {
-    
+    private int Cylinders;
+    private String GasType;
+    private boolean FuelInjected;
 }
