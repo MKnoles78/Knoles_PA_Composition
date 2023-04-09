@@ -63,7 +63,7 @@ public ArrayList<Tire> getTires() {
     return Tires;
 }
 //Add a tire using Tire object
-public void addTires(Tire val){
+public void addTire(Tire val){
     Tires.add(val);
 }
 
