@@ -72,23 +72,23 @@ public void addTire(String manufacturer, String size, int max, int min, String t
 }
 
 private String formatEngine() {
-    return String.format("%s%d%n%s%s%n%s%s", 
-    EngineInfo.getCylinders(),
-    EngineInfo.getGasType(),
-    EngineInfo.isFuelInjected());
+    return String.format("%s%s%n%s%s%n%s%s", 
+    "Engine Cylinders: ", EngineInfo.getCylinders(),
+    "Gas Type: ", EngineInfo.getGasType(),
+    "Fuel Injected?: ", EngineInfo.isFuelInjected());
 }
 
 public String getInfo() {
     String rval;
-    System.out.println("Automobile 1");
-    rval = String.format("%s%s%n%s%s%n%s%s%n%s%s%n",
+    rval = String.format("%s%s%n%s%s%n%s%s%n%s%s%n%s%n%s%n",
     "Make: ", Make,
     "Model: ", Model,
     "Color: ", Color,
     "Body Style: ", BodyStyle,
-    formatEngine());
+    formatEngine(),
+    "Tire: ");
 
-    rval += "\nTire: \n";
+
     for (Tire tire : Tires) {
         rval += tire;
         rval += "\n";

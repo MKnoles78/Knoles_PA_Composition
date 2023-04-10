@@ -28,21 +28,10 @@ public class App {
         auto2.addTire("Cooper", "265/70R17", 40, 44, "Spare");
 
         System.out.println("\nMike Knoles - Composition Performance Assessment");
-        System.out.println("Automobile 1 - Using to String");
-        System.out.println(auto1);
-        System.out.println(engine);
-        System.out.println("Tire 1");
-        System.out.println(t1);
-        System.out.println("Tire 2");
-        System.out.println(t2);
-        System.out.println("Tire 3");
-        System.out.println(t3);
-        System.out.println("Tire 4");
-        System.out.println(t4);
-        System.out.println("Tire 5");
-        System.out.println(t5);
+        System.out.println("Automobile 1");
+        System.out.print(auto1.getInfo());
 
-        System.out.println("\nAutomobile 2 = Using get Basic Info()");
+        System.out.println("\nAutomobile 2");
         System.out.print(auto2.getInfo());
 
 
