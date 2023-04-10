@@ -56,7 +56,7 @@ public class Tire {
 
     @Override
     public String toString() {
-        return String.format("%s%s%n%s%s%n%s%s%n%s%d%n%s%d%n%s%s",
+        return String.format("%s%s%n%s%s%n%s%d%n%s%d%n%s%s",
         "Mfg: ", Manufacturer,
         "Size: ", Size,
         "Max Pressure: ", MaxPressure,
