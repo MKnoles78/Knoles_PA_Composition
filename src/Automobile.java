@@ -80,15 +80,15 @@ private String formatEngine() {
 
 public String getInfo() {
     String rval;
-    rval = String.format("%s%s%n%s%s%n%s%s%n%s%s%n%s%n%s%n",
-    "Make: ", Make,
-    "Model: ", Model,
-    "Color: ", Color,
-    "Body Style: ", BodyStyle,
-    formatEngine(),
-    "Tire: ");
+    rval = String.format("%s%s%n%s%s%n%s%s%n%s%s%n%s",
+        
+        "Make: ", Make,
+        "Model: ", Model,
+        "Color: ", Color,
+        "Body Style: ", BodyStyle,
+        formatEngine());
 
-
+    rval += "\nTire: \n";
     for (Tire tire : Tires) {
         rval += tire;
         rval += "\n";
